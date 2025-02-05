@@ -1,0 +1,313 @@
+<html lang="zh-TW" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>我的生活部落格</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- 添加 Playfair Display 字體 -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <div class="logo-image">
+                        <img src="logo.png" alt="昆星晨靜">
+                    </div>
+                </div>
+                <div class="header-tools">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <div class="toggle-circle"></div>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#about">關於我</a></li>
+                        <li><a href="#daily">日常分享</a></li>
+                        <li><a href="#hobby">興趣愛好</a></li>
+                        <li><a href="#goals">目標與計劃</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 關於我區塊 -->
+            <section id="about" class="section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="intro-card">
+                            <!-- 卡片正面 -->
+                            <div class="card-front">
+                                <div class="intro-header">
+                                    <h3>自我介紹</h3>
+                                </div>
+                                <div class="intro-body">
+                                    <p>嗨！我叫<span class="highlight">莊昆翰</span>，大家都習慣叫我<span class="highlight">"Hank"</span>。</p>
+                                    <p>📍 來自<span class="highlight">臺灣 Taiwan</span>，目前就讀於 <span class="highlight">🎓 國立嘉義大學 數位學習設計與管理學系</span>。</p>
+                                    <p>我是個<span class="highlight">個性隨和、喜歡探索新事物🧩</span>的人。只要有朋友邀約，無論是吃飯、運動、看電影，我都樂意參與，喜歡透過這些日常小事感受生活的樂趣，歡迎來跟我聯絡~~~</p>
+                                    <p>我也重視<span class="highlight"> 團隊合作與溝通 🤝</span>，認為良好的分工與執行力是成功的關鍵。在團隊合作時，我會盡力確保每個環節都能順利進行，希望與夥伴們共同創造高效且愉快的合作體驗。</p>
+                                    <p>未來的路還在摸索，但我期待用自己的專業與熱情，創造更多有價值的可能！</p>
+                                </div>
+                                <div class="card-hint">靠近我還有背面喔~</div>
+                            </div>
+                            <!-- 卡片背面 -->
+                            <div class="card-back">
+                                <div class="rotating-gallery">
+                                    <div class="gallery-container">
+                                        <div class="gallery-item" style="--i:1">
+                                            <img src="picture1.jpg" alt="關於我 1">
+                                        </div>
+                                        <div class="gallery-item" style="--i:2">
+                                            <img src="picture2.JPG" alt="關於我 2">
+                                        </div>
+                                        <div class="gallery-item" style="--i:3">
+                                            <img src="picture3.jpg" alt="關於我 3">
+                                        </div>
+                                        <div class="gallery-item" style="--i:4">
+                                            <img src="picture4.jpg" alt="關於我 4">
+                                        </div>
+                                        <div class="gallery-item" style="--i:5">
+                                            <img src="picture5.jpg" alt="關於我 5">
+                                        </div>
+                                        <div class="gallery-item" style="--i:6">
+                                            <img src="picture6.jpg" alt="關於我 6">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 日常分享區塊 -->
+            <section id="daily" class="section">
+                <h2>日常分享</h2>
+                <div class="article-container">
+                    <article class="blog-post">
+                        <h3>我的第一篇文章</h3>
+                        <p>這是一段示範文字，描述了這篇文章的內容...</p>
+                    </article>
+                    <article class="blog-post">
+                        <h3>週末旅行記事</h3>
+                        <p>這是第二篇文章的內容描述...</p>
+                    </article>
+                    <article class="blog-post">
+                        <h3>生活點滴</h3>
+                        <p>第三篇文章的內容...</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 興趣愛好區塊 -->
+            <section id="hobby" class="section hobby-section">
+                <h2>興趣與嗜好</h2>
+                <div class="hobby-images">
+                    <div class="hobby-item" data-target="sports">
+                        <img src="sport.jpg" alt="運動">
+                        <p>運動</p>
+                    </div>
+                    <div class="hobby-item" data-target="dance">
+                        <img src="dance.jpg" alt="跳舞">
+                        <p>跳舞</p>
+                    </div>
+                    <div class="hobby-item" data-target="gaming">
+                        <img src="game.png" alt="玩遊戲">
+                        <p>玩遊戲</p>
+                    </div>
+                </div>
+                <div class="hobby-hint">點擊圖片可收合喔~</div>
+
+                <!-- 運動內容 -->
+                <div id="sports" class="hobby-content">
+                    <div class="sports-container">
+                        <div class="sport-item">
+                            <img src="basketball.jpg" alt="籃球">
+                            <h4>籃球</h4>
+                            <div class="rating">
+                                <div class="rating-item">
+                                    <span>熟練度：</span>
+                                    <span class="stars">⭐⭐⭐⭐</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>經驗時間：</span>
+                                    <span class="stars">⭐⭐⭐</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>熱忱度：</span>
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sport-item">
+                            <img src="volleyball.jpg" alt="排球">
+                            <h4>排球</h4>
+                            <div class="rating">
+                                <div class="rating-item">
+                                    <span>熟練度：</span>
+                                    <span class="stars">⭐⭐⭐⭐</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>經驗時間：</span>
+                                    <span class="stars">⭐⭐⭐</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>熱忱度：</span>
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sport-item">
+                            <img src="badminton.jpg" alt="羽毛球">
+                            <h4>羽毛球</h4>
+                            <div class="rating">
+                                <div class="rating-item">
+                                    <span>熟練度：</span>
+                                    <span class="stars">⭐⭐⭐⭐</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>經驗時間：</span>
+                                    <span class="stars">⭐⭐⭐</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>熱忱度：</span>
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 跳舞內容 -->
+                <div id="dance" class="hobby-content">
+                    <div class="dance-container">
+                        <div class="music-section">
+                            <h1>就讓我們盡情地放開跳舞吧~</h1>
+                            <h1 style="text-align: left;">👇適合跳舞的音樂</h1>
+                            <div class="music-player">
+                                <div class="speaker"></div>
+                                <div class="speaker"></div>
+                                <p>🎵 播放我推薦的舞蹈音樂</p>
+                                <audio controls>
+                                    <source src="Jacob Tillberg - Heartless (feat. Johnning).mp3" type="audio/mp3">
+                                    您的瀏覽器不支援音樂播放。
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="timeline-section">
+                            <div class="timeline-item">
+                                <h3>小學時期（初識舞蹈）</h3>
+                                <p>第一次接觸爵士舞，興奮得整晚睡不著。</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>國中時期（深入學習）</h3>
+                                <p>開始接觸韓國流行舞蹈，並學習其他舞種。</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h3>高中時期（舞台經驗）</h3>
+                                <p>學習街舞，並與學長姐一起在校內外表演。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 遊戲內容 -->
+                <div id="gaming" class="hobby-content">
+                    <h1>🎮 我的遊戲倉庫 🎮</h1>
+                    <div class="game-container">
+                        <div class="game-card">
+                            <div class="game-title">🎯 射擊類</div>
+                            <ul class="game-list">
+                                <li>Apex Legends</li>
+                                <li>Valorant</li>
+                            </ul>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-title">🕹️ 休閒類</div>
+                            <ul class="game-list">
+                                <li>Mahjongsoul</li>
+                                <li>Overcooked</li>
+                                <li>冰與火之舞</li>
+                            </ul>
+                        </div>
+                        <div class="game-card">
+                            <div class="game-title">🛡️ 角色扮演類</div>
+                            <ul class="game-list">
+                                <li>崩鐵</li>
+                                <li>絕區零</li>
+                                <li>鳴潮</li>
+                                <li>原神</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 目標與計劃區塊 -->
+            <section id="goals" class="section">
+                <div class="container">
+                    <h1>目標與計劃</h1>
+                    <div class="goal-section">
+                        <div class="goal-box">
+                            <h2>短期目標</h2>
+                            <ul>
+                                <li>每週完成一篇部落格文章</li>
+                                <li>開始學習一門新技能</li>
+                            </ul>
+                        </div>
+                        <div class="goal-box">
+                            <h2>長期目標</h2>
+                            <ul>
+                                <li>健身一年減少身上贅肉</li>
+                                <li>學會一種程式語言</li>
+                            </ul>
+                        </div>
+                        <div class="goal-box">
+                            <h2>生活願景</h2>
+                            <ul>
+                                <li>買一台屬於自己的機車</li>
+                                <li>小金庫內至少10萬以上</li>
+                            </ul>
+                            <p>目前進度：</p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="motivation-quote">"每一天的努力，都是邁向成功的一步。保持信念，勇往直前！"</p>
+            </section>
+
+            <!-- 留言區 -->
+            <section id="comments" class="section">
+                <div class="comment-container">
+                    <h2>留言區</h2>
+                    <textarea placeholder="請輸入你的留言..."></textarea>
+                    <button onclick="sendMessage()">發送留言</button>
+                    <div class="feedback"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social-icons">
+                <div class="icon-container">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <div class="text-popup">Facebook</div>
+                </div>
+                <div class="icon-container">
+                    <i class="fab fa-youtube fa-2x"></i>
+                    <div class="text-popup">Youtube</div>
+                </div>
+                <div class="icon-container">
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <div class="text-popup">Instagram</div>
+                </div>
+            </div>
+            <p>&copy; 2025 昆星晨靜</p>
+        </footer>
+        
+        <script src="script.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </body>
+</html>
